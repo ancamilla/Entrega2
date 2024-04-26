@@ -1,0 +1,69 @@
+/*Selector universal
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} */
+
+/*Estilos a nivel de etiquetas */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*Estilos a nivel de Clase*/
+.row {
+    margin-top: 5px;
+    margin-bottom: 20px; /*Para mantener una cierta separacion entre elementos*/
+}
+.formulario-contacto {
+    background-color: rgb(255,255,255, 0.85); /*85% de opacidad (15 de transparencia)*/
+    border-radius: 10px; /* Define el radio de los bordes */
+    padding: 20px; /* Añade un relleno para que los contenidos no se peguen a los bordes */
+}
+/*Estilos a nivel de IDs*/
+#img-carrusel {
+    min-height: 40vh;
+}
+
+#texto_carrusel {
+    color:black;
+    text-shadow:     
+    1px 1px 0 #fff, -1px -1px 0 #fff, /*desplaza la sombra 1px abajo y 1px a la derecha | desp la sombra 1px abajo y 1px a la derecha. */
+    1px -1px 0 #fff, -1px 1px 0 #fff; /*desp la sombra 1px arriba y 1px a la derecha | desp la sombra 1px abajo y 1px a la izquierda.*/
+  } /*el 0 en el tercer parametro indica el "difuminado" o "blur" de la sombra, mientras mas alto mas difuso*/
+#texto_carrusel2 { /*Formato de texto alternativo que intercambia el color del texto con el color de la sombra del mismo. */
+    color: #fff;
+    text-shadow:
+    1px 1px 0 #000, -1px -1px 0 #000, 
+    1px -1px 0 #000, -1px 1px 0 #000;
+  }
+#tarjeta {
+    text-align: center;
+}
+
+#img-tarjetas{
+    margin-top: 10px;
+    height: 70;
+    align-items: center;
+}
+#cnt-info{
+    width: 100%;
+    background-color: rgb(173, 216, 230,0.5); /*Color celeste (lightblue) el ultimo parametro indica opacidad*/
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#texto-caja-info{
+    text-align: justify;
+}
+#btn-contacto{
+    align-items: center;
+}
+#preguntas-frecuentes{
+    background-color: rgb(255,255,255, 0.90);
+    border-radius: 5px; /* Define el radio de los bordes */
+    padding: 10px; /* Añade un relleno para que los contenidos no se peguen a los bordes */
+}
+#contenido-acordeon{
+    text-align: justify;
+}

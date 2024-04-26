@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>MóvilVerso | Inicio</title>
+        <!-- Incorporamos bootstrap mediante CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Vinculamos estilo CSS mediante archivo externo-->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <div class="fondo" style="background-image: url('img/subtle-prism.svg');">
+            <!-- Barra de navegación-->
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary nav-fill">
+            <div class="container-fluid"> <!--Container-fluid hace que el contenedor del contenido del navbar se extienda por todo el ancho-->
+                <a class="navbar-brand" href="#">MóvilVerso</a>
+                <img src="img/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Portafolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Soluciones
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Augmented Reality</a></li>
+                        <li><a class="dropdown-item" href="#">Inteligencia Artificial</a></li>
+                        <li><a class="dropdown-item" href="#">Base de datos</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Desarrollo de software</a></li>
+                            <li><a class="dropdown-item" href="#">Desarrollo de API</a></li>
+                            <li><a class="dropdown-item" href="#">Desarrollo de aplicaciones</a></li>
+                        </ul>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contacto</a>
+                        </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Escribe algo..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+            </nav>
+        <hr>
+        <div class="container mt-5"> <!--mt-5 hace que la navbar no se sobreponga al carrusel dejando el espacio preciso-->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-6">
+                <!--Carrusel-->
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-ride="carousel" data-bs-interval="2000">
+                        <img src="img/OIG1_1024x1024.jpg" class="d-block w-100" id="img-carrusel" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="texto_carrusel">
+                            <h1>Sobre nosotros</h1>
+                            <p></p>
+                        </div>
+                        </div>
+                        <div class="carousel-item" data-bs-ride="carousel" data-bs-interval="2000">
+                        <img src="img/OIG2_1024x1024.jpg" class="d-block w-100" id="img-carrusel" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="texto_carrusel">
+                            <h1>Clientes</h1>
+                            <p>Marcas que confian en nosotros</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item" data-bs-ride="carousel" data-bs-interval="2000">
+                        <img src="img/OIG3_1024x1024.jpg" class="d-block w-100" id="img-carrusel" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="texto_carrusel">
+                            <h1>Portafolio de proyectos</h1>
+                            <p>Conozca nuetros proyectos terminados y en ejecución.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+<!--Tarjetas para contener mas información-->
+        <div class="row"><!--Se agregan 4 columnas con una card en cada una-->
+            <div class="col-3"> 
+                <div class="card" id="tarjeta">
+                    <div class="col"> <!--Se agrega una columna para ajuntar 2 imagenes. Usando Row quedaban mal-->
+                        <img src="img/analytic_cellphone.svg"  id="img-tarjetas" alt="Gráfico celular">
+                        <img src="img/pc_research.svg"   id="img-tarjetas" alt="Gráfico PC">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Desarrollo de Aplicaciones Móviles Multiplataforma</h4>
+                      <p class="card-text">Desarrollamos aplicaciones móviles multiplataforma personalizadas con una amplia gama de características y funciones adaptadas para mejorar la experiencia del usuario.</p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" id="tarjeta">
+                    <img src="img/dashboard_graph_icon.svg" class="card-img-top" id="img-tarjetas" alt="Gráfico">
+                    <div class="card-body">
+                      <h4 class="card-title">Desarrollo de Aplicaciones Móviles Empresariales</h4>
+                      <p class="card-text">
+                        Diseñamos aplicaciones móviles empresariales que garantizan los más altos estándares de seguridad y confiabilidad, permitiendo a las organizaciones maximizar la productividad, optimizar flujos de trabajo y obtener una mayor visibilidad y control.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" id="tarjeta">
+                    <img src="img/api_app_application_coding_development_icon.svg" class="card-img-top" id="img-tarjetas" alt="API">
+                    <div class="card-body">
+                      <h4 class="card-title">Soporte y Mantenimiento de Aplicaciones Móviles</h4>
+                      <p class="card-text">Ofrecemos servicios de soporte y mantenimiento a largo plazo después de la implementación de su aplicación móvil, garantizando su óptimo funcionamiento en todos los dispositivos y asegurándonos de que esté libre de errores.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" id="tarjeta">
+                    <img src="img/augmented reality_product_preview_application_virtual_icon.svg" id="img-tarjetas" class="card-img-top" alt="AR">
+                    <div class="card-body">
+                      <h4 class="card-title">Soluciones de Aplicaciones Móviles AR/VR</h4>
+                      <p class="card-text">Diseñamos aplicaciones móviles de realidad virtual y aumentada sensibles al contexto que utilizan datos de ubicación, software de reconocimiento de objetos y funciones 3D para brindar la mejor experiencia de usuario inmersiva. </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+<!--Agregar contenedor con informacion adicional sobre la empresa acompañada de una imagen-->
+            <div class="row" id="cnt-info" >
+                <div class="col">
+                    <p><h3><b>Tu solución a la medida en el mundo de las aplicaciones móviles</b></h3>
+                    <p id="texto-caja-info">¿Necesitas una app que te ayude a impulsar tu negocio a nuevas alturas? ¡Estás en el lugar correcto! Somos expertos en el desarrollo de aplicaciones móviles para Android, iOS y Windows, capaces de crear soluciones personalizadas que se ajusten perfectamente a tus necesidades y presupuesto.</p>
+                    <h4><b>Llega a más clientes que nunca con apps para Android</b></h4>
+                    <p id="texto-caja-info">Aprovecha el potencial de los dispositivos Android, los más populares del mercado, con nuestras aplicaciones móviles hechas a medida. Te ofrecemos servicios completos de soporte, implementación, integración y desarrollo para que tu app funcione a la perfección.</p>
+                    <h4><b>Destaca en el mercado con apps para iOS</b></h4>
+                    <p id="texto-caja-info">Desarrollamos aplicaciones iOS que te ayudarán a diferenciarte de la competencia y alcanzar tus metas comerciales. Contamos con las herramientas y la experiencia necesarias para crear apps innovadoras y atractivas para los usuarios de iPhone y iPad.</p>
+                    <h4><b>Soluciones móviles inteligentes con apps para Windows</b></h4>
+                    <p id="texto-caja-info">Creamos aplicaciones móviles basadas en Windows para uso industrial y de consumo, aprovechando todo el poder de la tecnología de Microsoft. Nuestras apps te permitirán optimizar tus procesos, mejorar la comunicación y aumentar tu productividad.</p>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="img/smartphone_copilot.jpg" class="img-fluid">
+                </div>
+            </div>
+  
+<!--Agregar formulario de contacto y acordeon con algunas preguntas frecuentes-->
+<div class="row">
+<div class="col-5 mt-4">
+<form class="formulario-contacto"> <!---->
+    <h3>Contacto</h3>
+    <!--Entrada de nombre y apellido -->
+    <div class="row mb-1"> <!--margin buttom 1-->
+        <div class="col">
+      <label for="txt_nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="txt_nombre" aria-describedby="txt_nombre_Help">
+      <div id="txt_nombre_Help" class="form-text">Obligatorio</div>
+        </div>
+    <div class="col">
+        <label for="txt_apellido" class="form-label">Apellido:</label>
+      <input type="text" class="form-control" id="txt_nombre" aria-describedby="txt_nombre_Help">
+      <div id="txt_nombre_Help" class="form-text">Obligatorio</div>
+    </div>
+    </div>
+    <!-- Entrada de correo y mensaje-->
+    <div class="col">
+      <label for="txt_correo" class="form-label">Correo:</label>
+      <input type="email" class="form-control" id="txt_email" aria-describedby="txt_email_Help" placeholder="correo@ejemplo.com">
+      <div id="txt_email_Help" class="form-text">Ingrese su correo para ser contactado</div>    
+    </div>
+    <div class="col mt-2">
+        <label for="txt_mensaje" class="form-label">Mensaje:</label>
+        <textarea class="form-control" id="txt_mensaje" rows="3"></textarea>
+    </div>
+    <!--Botón para cenviar datos-->
+    <div class="text-center">
+    <input type="button" value="Enviar" onclick="EnviarInfoContacto();"  class="btn btn-primary mt-2" id="btn-contacto"> 
+    </div>
+  </form>
+</div>
+<div class="col-6 mt-4" > <!--Inicio acordeon-->
+    <div class="accordion accordion-flush" id="contenido-acordeon">
+        <div class="accordion-item" id="preguntas-frecuentes">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" id="preguntas-frecuentes" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Qué es el desarrollo de una aplicación móvil?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">El desarrollo de una aplicación móvil es el proceso de crear software para su uso en dispositivos móviles como teléfonos inteligentes y tabletas. Involucra conocimientos, técnicas y procedimientos específicos.</div>
+          </div>
+        </div>
+        <div class="accordion-item" id="preguntas-frecuentes">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" id="preguntas-frecuentes" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              ¿Qué se necesita para desarrollar una app móvil?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Para desarrollar una app móvil se requiere: definir objetivos, identificar mercado, conceptualizar la app, seleccionar tecnología, explorar opciones de desarrollo, probar exhaustivamente y publicar en tiendas de apps.</div>
+          </div>
+        </div>
+        <div class="accordion-item" id="preguntas-frecuentes">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" id="preguntas-frecuentes" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              ¿Cómo integrar IA en aplicaciones móviles?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">La IA se integra en apps móviles mediante algoritmos de machine learning, procesamiento de lenguaje natural y visión por computadora para crear chatbots, análisis predictivo y recomendaciones.</div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+        </div>
+    </div>
+    </body>
+</html>
